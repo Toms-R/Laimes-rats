@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Laimes rats</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Goldman">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+
+    <script src="scripts.js"></script>
+
+
+</head>
+
+<body>
+
+    <!-- Modal ar vārdu ievadi -->
+
+    <div class="modal" id="my-modal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div>
+                <h3>Ievadi cilvēku vārdus, kuriem būs iespēja atgriezties pagātnē...</h3>
+                <div class="forma">
+
+                    <input type="text" id="first" name="fname" value="" maxlength="20" required>
+                    <input type="text" id="second" name="fname" value="" maxlength="20" required>
+                    <input type="text" id="third" name="fname" value="" maxlength="20" required>
+                    <input type="text" id="fourth" name="fname" value="" maxlength="20" required>
+                    <input type="text" id="fifth" name="fname" value="" maxlength="20" required>
+                    <input type="text" id="sixth" name="fname" value="" maxlength="20" required>
+
+                    <button class="button small" style="float: right; border: none; text-decoration: none;outline: none;" onclick="submitNames()">Ievadīt</button>
+
+                </div>
+            </div>
+            <a class="button small" href="#close">Aizvērt</a>
+        </div>
+    </div>
+
+
+    <!-- Galvenā lapas daļa -->
+
+    <div id="overlay">
+        <h1>Atgriezties pagātnē</h1>
+        <h2 id="jackpot"></h2>
+        <div class="trigger">
+            <a class="button" href="#my-modal">Ievadīt vārdus</a>
+        </div>
+        <div id="container">
+
+            <p id="spin">Spied uz bultas, lai iegrieztu ratu!<br></p>
+            <section id="wheel_comp">
+                <div id="wheel">
+                    <div class="part1">
+                        <h4 id="first-name"></h4>
+                    </div>
+                    <div class="part2">
+                        <h4 id="second-name"></h4>
+                    </div>
+                    <div class="part3">
+                        <h4 id="third-name"></h4>
+                    </div>
+                    <div class="part4">
+                        <h4 id="fourth-name"></h4>
+                    </div>
+                    <div class="part5">
+                        <h4 id="fifth-name"></h4>
+                    </div>
+                    <div class="part6">
+                        <h4 id="sixth-name"></h4>
+                    </div>
+
+                </div>
+                <div id="arrow"></div>
+                <div id="middel">
+
+
+                </div>
+
+
+            </section>
+
+
+        </div>
+    </div>
+    <div id="hey">
+        <div id="layer-up"></div>
+    </div>
+    <div id="layer-0">
+
+        <div id="layer-1">
+            <div id="layer-2">
+                <div id="lines">
+                    <div id="layer-corner"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
